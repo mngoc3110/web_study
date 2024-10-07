@@ -1,0 +1,502 @@
+:root {
+	--font_family_body: 'Roboto', sans-serif;
+	--font_family_body_size: 16px;
+	--font_family_body_weight: normal;
+	--font_family_body_line-height: 30px;
+	--font_family_heading: 'Roboto', sans-serif;
+	--color_primary: #1e2457;
+	--color_secondary: #a3251c;
+	--color_text_background: #F0F5FF;
+	--color_text_heading: #161616;
+    --font_family_heading: 'Roboto', sans-serif;
+    --color_do: #CB0000;
+    --footer: #A02116;
+    --xanhdam:#160092;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* header */
+.header-section{
+    height: 120px;
+}
+
+header{
+    height: 70px;
+    position:fixed;
+    top:0;
+    width:100%;
+    align-items: center;
+    background-color:white;
+    z-index:999;
+    box-shadow: 0px 0px 10px 0px rgb(0,0,0,0.7);
+}
+nav ul{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    gap:40px;
+    text-decoration: none;
+    list-style-type:none;
+    font-size:20px;
+   
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+li:hover{
+    background-color:#F0F5FF;
+    padding:2px;
+}
+.header-container{
+    display:flex;
+    gap:40px;
+    align-items: center;
+    justify-content: center ;
+    height: 70px;
+    
+}
+.become-teacher-button button{
+    border-radius: 10px;
+    border: 2px solid #160092;
+    padding:10px;
+    font-size:16px;
+    background-color:white;
+    color:#160092
+}
+.become-teacher-button  button:hover{
+    background-color:#160092;
+    color:white;    
+    transition:ease-in-out 0.5s;   
+}
+.icon-container{
+    display:flex;
+    font-size:30px;
+    cursor:pointer;
+}
+ion-icon:hover{
+    transform: scale(1.5);
+}
+.info-container {
+    position: relative; /* Đặt vị trí tương đối cho container */
+}
+
+.info-container ion-icon {
+    font-size: 30px;
+}
+
+.info-box {
+    right:0;
+    border: 1px solid #160092;
+    padding: 40px;
+    border-radius: 10px;
+    display: none; /* Ẩn hộp thông tin ban đầu */
+    position: absolute; /* Định vị tuyệt đối */
+    top: 100%; /* Đặt nó ngay dưới biểu tượng */
+  
+    margin-top: 20px; /* Khoảng cách nhỏ giữa icon và info box */
+    background-color: #fff; /* Thêm màu nền nếu cần */
+    z-index: 10; /* Đảm bảo nó hiển thị trên các phần tử khác */
+    transition:ease-in-out 1s;
+    color:#160092;
+    font-weight:bold;
+}
+.info-box p:hover{
+    color:#CB0000;
+    background-color:#F0F5FF;
+    padding:2px;
+}
+.register{
+    padding:10px;
+    border:1px solid #160092;
+    border-radius:10px;
+    background-color: white;
+    color:#160092;
+    width: 100px;
+}
+.login{
+    padding:10px;
+    border:1px solid #160092;
+    border-radius:10px;
+    background-color: white;
+    color:#160092;
+    width: 100px;
+}
+.register:hover,.login:hover{
+    color:white;
+    background-color: #160092;
+    transition:ease 0.5s;
+}
+.line{
+    color:black;
+    background-color: #160092;
+    height: 2px;
+    width: 200px;
+}
+.cart-items p{
+    font-size:20px;
+}
+
+
+.cart-box {
+    position: absolute;
+    top: 110%; /* Đặt vị trí ngay dưới icon */
+    right:50px;
+    width: 400px; /* Đặt chiều rộng cố định */
+    max-width: 90%; /* Giới hạn chiều rộng tối đa để phù hợp với thiết bị nhỏ hơn */
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 10px;
+    
+
+
+    display: none; /* Ẩn mặc định */
+}
+.item-container{
+    display:flex;
+    gap:20px;
+    overflow-y: auto;
+    height: 100px;
+}
+.item-container p{
+    font-size:20px;
+}
+.cart-box button{
+    background-color: white;
+    color:#160092;
+    padding:10px;
+    border:1px solid #160092;
+    border-radius:10px;
+    margin-top:50px;
+}
+.cart-box button a{
+    color:#160092;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Màu đen mờ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Đặt z-index cao hơn để nó nằm trên các phần tử khác */
+}
+
+.search-box {
+    position:fixed;
+    top:100px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.search-box input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+}
+.search-results a{
+    font-size:24px;
+}
+.search-box button {
+    padding: 10px;
+    border-radius:10px;
+    border:1px solid #160092;
+    color:#160092;
+    background-color:white;
+}
+
+.search-box button:hover{
+    color:white;
+    background-color:#160092;
+    transition: ease 0.5s;
+}
+
+.notification-popup {
+    right:50px;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+    width: 200px; /* Kích thước popup */
+    margin-top:60px;  
+    border-radius:10px; 
+    font-size:24px;
+}
+
+/* avatar header */
+.avatar img{
+    width:100px;
+    height:100px;
+    object-fit:cover;
+    border-radius:10px;
+}
+.button-container button{
+    padding:10px;
+    color: #160092;
+    background-color:white;
+    border: 1px solid  #160092;
+    border-radius:10px;
+}
+.button-container button:hover{
+    color: white;
+    background-color:#160092;
+    transition:0.5s ease;
+}
+/* footer */
+footer {
+    margin-top:100px;
+    background-color:#a3251c; /* Màu nền tối */
+    color: #fff; /* Màu chữ */
+    padding: 100px 80px; /* Khoảng đệm cho footer */
+}
+
+.footer-container {
+    display: flex; /* Sử dụng flexbox cho các box */
+    justify-content: space-around; /* Căn giữa các box */
+    flex-wrap: wrap; /* Đảm bảo box xuống hàng trên màn hình nhỏ */
+    max-width: 1400px; /* Đặt chiều rộng tối đa */
+    margin: 0 auto; /* Căn giữa footer */
+}
+
+.footer-box {
+    flex: 1; /* Cho phép box chiếm không gian đều */
+    min-width: 200px; /* Đặt chiều rộng tối thiểu */
+    margin: 10px; /* Khoảng cách giữa các box */
+}
+
+.footer-main-text {
+    color:#FFE675;
+    font-size: 20px; /* Kích thước chữ cho tiêu đề */
+    font-weight: bold; /* Đậm chữ */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+}
+
+.footer-sub-text {
+    font-size: 16px; /* Kích thước chữ cho nội dung */
+    margin-bottom: 10px; /* Khoảng cách dưới từng dòng nội dung */
+    color:white;
+}
+.footer-sub-text a{
+    color:white;
+    text-decoration: none;
+}   
+.footer-mail-inbox-container {
+    display: flex; /* Sử dụng flexbox cho ô nhập mail */
+    margin-top: 10px; /* Khoảng cách trên */
+}
+
+.footer-mail-inbox {
+    flex: 1; /* Ô nhập chiếm không gian còn lại */
+    padding: 10px; /* Khoảng đệm cho ô nhập */
+    border: none; /* Bỏ đường viền */
+    border-radius: 4px; /* Bo góc */
+    margin-right: 10px; /* Khoảng cách bên phải */
+}
+
+.footer-mail-inbox-button {
+    background-color:#FFE675; /* Màu nền cho nút */
+    color: black; /* Màu chữ */
+    font-weight: bold;
+    border: none; /* Bỏ đường viền */
+    padding: 10px 15px; /* Khoảng đệm cho nút */
+    border-radius: 4px; /* Bo góc */
+    cursor: pointer; /* Con trỏ khi hover */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền */
+}
+
+.footer-mail-inbox-button:hover {
+    background-color:#CB0000; /* Màu nền khi hover */
+    color:white;
+}
+
+/* Biểu tượng mạng xã hội */
+.footer-icon-container {
+    display: flex; /* Sử dụng flexbox cho biểu tượng */
+    gap: 10px; /* Khoảng cách giữa các biểu tượng */
+    margin-top: 10px; /* Khoảng cách trên cho biểu tượng mạng xã hội */
+}
+/* banner-section */
+.banner-section{
+    padding:40px;
+    background-color: #F0F5FF;
+}
+.banner-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+.text-container{
+    width: 100%;
+    line-height: 1.5;
+    color:#160092;
+    font-weight:bolder;
+}
+.banner-left-side-container,
+.banner-middle-side-container,
+.banner-right-side-container {
+    flex: 1; /* Chia đều không gian cho các phần tử */
+    padding: 20px; /* Khoảng cách bên trong */
+  
+}
+.banner-right-side-container .text-container .main{
+    font-size:100px;
+    margin-top:-50px;
+}
+.banner-note{
+    font-size:30px;
+    margin-top:-100px;
+    gap:20px;
+}
+.banner-left-side-container .text-container p{
+    font-size:100px;
+
+   
+    
+}
+.banner-right-side-container{
+    text-align: right;
+}
+.banner-button-container button{
+    padding:20px;
+    color:#160092;
+    background-color:white;
+    border:1px solid #160092;
+    border-radius:10px;
+    font-size:20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:100px;
+}
+.banner-button-container button:hover{
+    color:white;
+    background-color: #160092;
+    transition:ease-in-out 0.5s;
+}
+#menu{
+    display: none;
+}
+.orther-container{
+        display: flex;
+        gap:40px;
+        justify-content: flex-end;
+        margin-right:40px;
+       position: absolute;
+       margin-top:20px;
+       top:0;
+       right:0;
+    }
+/* responsive */
+@media(max-width:1440px){
+    .banner-image-container img{
+        width:400px;
+        height:300px;   
+    }
+    .banner-left-side-container .text-container p{
+        font-size:70px;
+    }
+}
+@media(max-width:990px){
+    #menu{
+       
+        display: block;
+    }
+    .banner-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-right-side-container{
+        text-align: center;
+    }
+    nav ul {
+    margin-top: 80px; /* Khoảng cách từ trên xuống */
+    display: none; /* Sử dụng flexbox để sắp xếp các phần tử */
+    flex-direction: column; /* Sắp xếp theo chiều dọc */
+    align-items: flex-start; /* Căn trái các mục trong menu */
+    background-color: rgba(255, 255, 255, 1); /* Màu nền với độ trong suốt */
+    padding: 30px; /* Khoảng cách bên trong */
+    border-radius: 10px; /* Bo góc cho menu */
+    width: 100%; /* Chiều rộng tùy thuộc vào màn hình */
+   
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng cho menu */
+    position: absolute; /* Để có thể định vị nếu cần */
+}
+    
+/* Thêm các quy tắc CSS khác nếu cần */
+    .header-container{
+        align-items:baseline;
+        justify-content: left;
+        margin-top:0;
+       
+    }
+    .icon {
+        font-size:30px;
+            width: 40px;
+            height: 40px;
+            position:absolute;
+            top:20;
+            left:40;
+        }
+
+        .banner-discount-text-container{
+            font-size:20px;
+        }
+        .banner-discount-button-container button{
+            padding:7px;
+            font-size:10px;
+        }
+        .banner-discount-container{
+            flex-direction: column;
+        }
+        .student-info-container{
+            flex-direction: column;
+        }
+        .cart-box{
+            font-size:15px;
+        }
+        .notification-popup{
+            font-size:15px;
+        }
+        .info-box{
+            padding:20px;
+            font-size:15px;
+        }
+       
+       
+   
+}
+@media(max-width:450px){
+    .banner-image-container img{
+        width: 200px;
+        height: 150px;
+    }
+    .banner-left-side-container .text-container p{
+        font-size:50px;
+    }
+    footer{
+        padding:30px 20px;
+    }
+    .search-box input{
+        width: 200px;
+    }
+    .search-results a{
+        font-size:20px;
+    }
+    .banner-note{
+        font-size:20px;
+    }
+    
+}
+

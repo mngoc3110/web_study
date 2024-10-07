@@ -1,0 +1,46 @@
+form{
+    display:grid;
+    gap:40px;
+}
+label{
+    font-size:24px;
+    font-weight: bold;
+}
+.course-upload{
+    padding:100px;
+}
+.how-to-upload{
+    margin-top:100px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+}
+img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius:10px;
+}
+input{
+    font-size:20px;
+    padding:20px;
+}
+button{
+    padding:20px;
+    border:1px solid #160092;
+    background-color: white;
+    font-size:24px;
+    color:#160092;
+    border-radius:10px;
+}
+button:hover{
+    background-color:#160092;
+    color:white;
+    transition:ease 0.3s;
+}
+a{
+    margin-top:100px;
+    font-size:24px;
+}

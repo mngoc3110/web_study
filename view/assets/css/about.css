@@ -1,0 +1,331 @@
+.vision-container{
+    background-color: #F0F5FF;
+    padding-top:20px;
+    padding-bottom:100px;
+}
+.vision-content{
+    max-width: 1400px;
+    margin:0 auto;
+}
+.title-section{
+    display: flex;
+    align-items: center;
+    padding:20px;
+    margin-top:20px;
+}
+.title-bar{
+    width:5px;
+    background-color:red;
+    height: 120px;
+    margin-right:10px;
+}
+.title-text{
+    display: flex;
+    flex-direction: column;
+}
+.title-text h3{
+    font-size:70px;
+    font-weight: 600;
+    font-family: var(--font_family_heading);
+    margin: 0 0 20px 0;
+    color:#160092;
+}
+.title-text h2{
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #CB0000;
+    margin-bottom: 10px;
+}
+#titlebar2{
+    margin-left:20px;
+}
+#sumenh2{
+    text-align: right;
+}
+#sumenh{
+    justify-content: flex-end;
+}
+.vision-container .vision-content{
+    justify-content: space-between;
+}
+.content-section{
+    display: flex;
+    justify-content: space-around;
+}
+.note-box {
+    padding: 15px 20px 10px 20px;
+    border-color: #ECECEC;
+}
+
+.note-box .icon {
+    font-size: 30px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.image-box {
+    width:30%;
+    height: 30%;
+    text-align: center;
+}
+.image-box img {
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.content-section .text-box .note-box p{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--font_family_body);
+    line-height: 2em;
+    
+}
+.history-container .content-section #reverse{
+    flex-direction: row-reverse;
+}
+.content-section .text-box {
+    width: 60%;
+    align-items: center;
+    border: 1px solid  #160092;
+    border-radius: 10px;
+}
+/* student comment */
+.student-comment-section{
+    padding:100px;
+}
+.student-comment-container{
+    
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding:20px;   
+    border-radius: 10px;
+}
+
+.student-comment-left-side-container .student-comment-image-container img{
+    width: 300px;
+    object-fit: cover;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.student-comment-left-side-container {
+    justify-content: center;
+    text-align: center;
+}
+.student-comment-left-side{
+    margin-top:10px;
+}
+.student-comment-right-side-container{
+    flex:1; 
+}
+.right-side-container ul li{
+    text-decoration: none;
+    
+    font-size:20px; 
+    line-height: 2;
+    font-weight: 800;
+   
+}
+.student-comment-section-container {
+    width: 100%;
+    overflow-x: auto; 
+    
+}
+
+.scroll-container {
+    display: flex; 
+    gap:40px;
+    padding:40px;
+}
+
+.star-rating {
+    direction:ltr;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.star {
+    font-size: 40px; 
+    color: #ccc; 
+    cursor: pointer; 
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked ~ .star {
+    color: gold; 
+}
+select{
+    padding:10px;
+    font-size:20px;
+}
+input[type="radio"]:hover ~ .star,
+input[type="radio"]:hover ~ input[type="radio"] ~ .star {
+    color: gold;
+}
+
+input[type="radio"]:checked {
+    display: none; 
+}
+.add-comment-container{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding:50px;
+    border-radius: 10px;
+    background-color: #F0F5FF;
+}
+.input-container{
+    display: grid;
+}
+input{
+    padding:10px;
+    width: 500px;
+}
+label{
+    font-size:24px;
+    font-weight: bold;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+.add-comment-button{
+    margin-top:300px;
+}
+button{
+    padding:20px;
+    background-color: white;
+    color:#160092;
+    border:1px solid #160092;
+    border-radius: 10px;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #160092;
+    color:white;
+    transition: 0.5s ease;
+}
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+}
+.line-decor{
+    background-color: #FFE675;
+    width: 100px;
+    height: 5px;
+}
+h2.section-title{
+    color:#CB0000;
+    font-size:50px; 
+}
+@media(max-width:990px){
+    .title-section{
+            justify-content: center;
+        }
+    .content-section{
+            flex-direction: column;
+            justify-content: center;
+            padding:100px;
+            gap:40px;
+        }
+        .image-box{
+            width: 100%;
+        }
+        .content-section .text-box{
+            width: 100%;
+        }
+        #sumenh{
+            justify-content: center;
+        }
+        .student-comment-left-side-container .student-comment-image-container img{
+            width: 200px;
+            height: 200px;
+        }
+        .right-side-container ul li{
+            margin-left:0;
+            font-size:15px;
+        }
+        .add-comment-container{
+            flex-direction: column;
+        }
+        .add-comment-button{
+            margin-top: 20px;
+        }select,
+        input{
+            width: auto;
+            padding:5px;
+            font-size:18px;
+        }
+        label{
+            font-size:20px
+        }
+}
+@media(max-width:450px){
+    .content-section{
+        padding:20px;
+    }
+    .title-text h3{
+        font-size:50px
+    }
+    .image-box img{
+        width: 300px;
+        height: 200px;
+    }
+    select, input{
+        width: 200px;
+    }
+    .student-comment-section{
+        padding:20px;
+    }
+    h2.section-title{
+        font-size:50px;
+    }
+    .title-container{
+        gap:20px;
+        align-items: center;
+        text-align: center;
+    }
+    .line-decor{
+        width: 50px;
+    }
+    .student-comment-left-side-container .student-comment-image-container img{
+        width: 100px;
+        height: 100px;
+    }
+    .student-comment-container
+    {
+        padding:10px;
+    }
+    .add-comment-container{
+        padding:30px;
+       
+    }
+    h2.section-title{
+        font-size:30px;
+    }
+}
+@media(max-width:330px){
+    .image-box img{
+        width:200px;
+        height: 150px;
+    }
+    .search-box input{
+        width: 150px;
+    }
+    select, input{
+        width: 150px;
+    }
+    .star{
+        font-size:20px;
+    }
+    h2.section-title{
+        font-size:25px;
+    }
+    .title-text h3{
+        font-size:25px;
+    }
+}

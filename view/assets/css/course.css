@@ -1,0 +1,74 @@
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+}
+.line-decor{
+    background-color: #FFE675;
+    width: 100px;
+    height: 5px;
+}
+h2.section-title{
+    color:#CB0000;
+    font-size:50px; 
+}
+.list-video-section.video{
+    padding:100px;
+}
+.list-video-box-container{
+    
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+    display:flex;
+    flex-wrap: wrap;
+    gap:40px;
+    padding:20px;
+    justify-content: center;
+}
+
+.list-video-box{
+    height: 200px;
+    border: 1px solid #160092;
+    width: 450px;
+    border-radius:10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    display:flex;
+    gap:40px;
+}
+/* chức năng kéo ngang cho list */
+
+.video-title{
+    font-size:24px;
+    font-weight: bold;
+}
+.video-number{
+    margin-top:10px;
+
+}
+.list-video-box-container img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius:10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+@media(max-width:990px){
+    .list-video-box{
+        flex-direction: column;
+        width: auto;
+        padding:20px;
+        height: 250px;
+        
+    }
+    .list-video-box-container{
+        box-shadow: none;
+    }
+}
+@media(max-width:450px){
+    h2.section-title{
+        font-size:30px;
+    }
+    .line-decor{
+        width:25px;
+    }
+}

@@ -1,0 +1,119 @@
+table {
+    width: 100%;
+   
+
+    border-collapse: collapse; /* Gộp các đường viền */
+    margin-top: 20px; /* Khoảng cách trên */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.spacer{
+    height: 300px;
+}
+.text-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 100px;
+    height: 5px;
+    background-color: #FFE675;
+}
+h1.section-title{
+    text-align: center;
+    padding: 20px;
+    font-size:40px;
+    color:#CB0000;
+    font-weight: bold;
+}
+thead {
+    display: table-header-group; /* Đảm bảo tiêu đề vẫn hiển thị khi cuộn */
+}
+tbody {
+    display: block; /* Chuyển tbody thành block để có thể cuộn */
+    max-height: 800px; /* Chiều cao tối đa cho tbody */
+    overflow-y: auto; /* Cuộn dọc */
+}
+tr {
+    display: table; /* Đảm bảo các hàng có cùng chiều cao */
+    width: 100%; /* Chiều rộng 100% */
+    table-layout: fixed; /* Giúp các cột có cùng chiều rộng */
+}
+th, td {
+    padding: 12px; /* Đệm bên trong */
+    text-align: left; /* Căn trái */
+    border: 1px solid #ddd; /* Đường viền */
+}
+th {
+    background-color: #F0F5FF; /* Màu nền của tiêu đề */
+    color: black; /* Màu chữ */
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Màu nền cho hàng chẵn */
+}
+tr:hover {
+    background-color: #ddd; /* Màu nền khi di chuột qua */
+}
+.button-container {
+    display: flex;
+    gap: 10px; /* Khoảng cách giữa các nút */
+}
+.button {
+    padding: 8px 12px;
+    background-color: #007BFF; /* Màu nền của nút */
+    color: white; /* Màu chữ */
+    border: none;
+    border-radius: 4px; /* Góc bo */
+    cursor: pointer; /* Con trỏ chuột */
+}
+.button:hover {
+    background-color: #0056b3; /* Màu nền khi di chuột qua */
+}
+
+/* add blog */
+.addblog-section{
+    margin-bottom:200px;
+}
+form {
+    max-width: 600px; /* Chiều rộng tối đa của biểu mẫu */
+    margin: auto; /* Căn giữa */
+    padding: 20px; /* Đệm bên trong */
+    border: 1px solid #ddd; /* Đường viền */
+    border-radius: 5px; /* Góc bo */
+    background-color: #f9f9f9; /* Màu nền */
+}
+label {
+    display: block; /* Hiển thị label dưới dạng khối */
+    margin-bottom: 8px; /* Khoảng cách dưới label */
+    font-size:24px;
+    font-weight: bold;
+}
+input[type="file"],
+input[type="text"], textarea {
+    width: 95%; /* Chiều rộng 100% */
+    padding: 10px; /* Đệm bên trong */
+    margin-bottom: 20px; /* Khoảng cách dưới trường nhập */
+    border: 1px solid #ccc; /* Đường viền */
+    border-radius: 4px; /* Góc bo */
+}
+button {
+    padding: 10px 15px; /* Đệm cho nút */
+    background-color: #CB0000; /* Màu nền của nút */
+    color: white; /* Màu chữ */
+    border: none; /* Không có đường viền */
+    border-radius: 4px; /* Góc bo */
+    cursor: pointer; /* Con trỏ chuột */
+}
+button:hover {
+    background-color: black; /* Màu nền khi di chuột qua */
+    transition:0.5s ease;
+}
+
+img{
+width: 200px;
+height: 200px;
+object-fit: cover;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+border-radius:10px; 
+}
+

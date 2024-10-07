@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change nickname</title>
+    <style>
+        .forminput {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 200px;
+            background-color: #F0F5FF;
+            padding: 200px;
+            gap: 20px;
+        }
+        button {
+            color: #160092;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px; 
+            border: 1px solid #160092;
+        }
+        button:hover {
+            color: white;
+            background-color: #160092;
+            transition: 0.5s ease;
+        }
+        input {
+            width: 300px;
+            height: 50px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="forminput">
+        <form action="./view/assets/php/changenickname.php" method="POST">
+            <h1>Change your nickname here</h1>
+            <input type="text" name="nickname" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

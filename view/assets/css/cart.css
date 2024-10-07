@@ -1,0 +1,54 @@
+main{
+    margin-top:400px;
+}
+h1{
+    text-align:center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.checkout  {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #160092;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #160092;  
+    border-radius:10px;
+    
+}
+
+.checkout  a {
+    color: #160092;
+    text-decoration: none;
+}
+.checkout a:hover,
+.checkout:hover {
+    background-color: #160092;
+    color:white;
+    transition: ease 0.3s;
+    
+}
+.delete-button{
+    padding:10px;
+    color:#160092;
+    background-color:white;
+    border:1px solid #160092;
+    border-radius:10px;
+}
+.delete-button:hover{
+    color:white;
+    background-color:#160092;
+}

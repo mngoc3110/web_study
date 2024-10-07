@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/course.css">
+    <title>Upload course</title>
+
+</head>
+<body>
+    <section class="how-to-upload">
+        <h2>Step 1: Click the link</h2>
+        <h2>Step 2: Create a folder</h2>
+        <h2>Step 3: Upload your course</h2>
+        <h2>Step 4: Copy the link off the course</h2>
+        <img src="https://drive.google.com/thumbnail?id=19kjHUti9ACts1SXB0wG14zOrHhNfIsrG&sz=w4000">
+        <a href="https://drive.google.com/drive/u/1/folders/19kjHUti9ACts1SXB0wG14zOrHhNfIsrG">Click here to upload</a>
+    </section>
+    <section class="course-upload">
+    <form action="./assets/php/upload_course.php" method="POST">
+        <label>Name:</label>
+        <input name="name">
+        <label>Description:</label>
+        <input name="description">
+        <label>Course's Link:</label>
+        <input name="link">
+        <label>Price:</label>
+        <input name="cost" >
+        <button type="submit">Enter</button>
+    </form></section>
+</body>
+</html>

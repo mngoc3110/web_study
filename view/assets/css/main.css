@@ -1,0 +1,392 @@
+:root {
+	--font_family_body: 'Roboto', sans-serif;
+	--font_family_body_size: 16px;
+	--font_family_body_weight: normal;
+	--font_family_body_line-height: 30px;
+	--font_family_heading: 'Roboto', sans-serif;
+	--color_primary: #1e2457;
+	--color_secondary: #a3251c;
+	--color_text_background: #F0F5FF;
+	--color_text_heading: #161616;
+    --font_family_heading: 'Roboto', sans-serif;
+    --color_do: #CB0000;
+    --footer: #A02116;
+    --xanhdam:#160092;
+    --header_font:100px;
+    --vang:#FFE675;
+}
+/* history video section */
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+}
+.line-decor{
+    background-color: #FFE675;
+    width: 100px;
+    height: 5px;
+}
+h2.section-title{
+    color:#CB0000;
+    font-size:50px; 
+}
+.history-video-section{
+    padding:100px;
+}
+.history-video-box-container{
+    
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+    display:inline-flex;
+    gap:40px;
+    padding:20px;
+}
+video{
+    width: 40%;
+    height: auto;
+}
+.history-video-box{
+    height: 200px;
+    border: 1px solid #160092;
+   
+    border-radius:10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    display:flex;
+    width: 500px; /* Hoặc một chiều rộng cụ thể như 300px */
+    padding:20px;
+    gap:20px;
+    overflow: hidden; /* Ẩn phần tràn ra ngoài */
+    white-space: normal; 
+}
+
+/* chức năng kéo ngang cho list */
+.scroll-container{
+    overflow-x: auto;
+    white-space: nowrap;
+    padding:10px 0;
+}
+.video-title{
+    font-size:24px;
+    font-weight: bold;
+    word-wrap: break-word; /* Hoặc */
+    overflow-wrap: break-word; /
+}
+.video-text{
+    width:50%;
+}
+.video-number{
+    margin-top:10px;
+
+}
+/* promotion */
+.banner-discount-section{
+    padding:100px;
+}
+.banner-discount-container{
+    background-color: #F0F5FF;
+    padding:40px;
+    display: flex;
+    justify-content: space-between;
+    border:1px solid #160092;
+    border-radius:10px;
+}
+.banner-discount-button-container{
+   
+    align-items: center;
+   
+}
+.banner-discount-button-container button{
+    padding:10px;
+    background-color: white;
+    border:1px solid #160092;
+    border-radius:10px;
+}
+.banner-discount-button-container button:hover{
+    background-color: #160092;
+    color:white;
+    transition: 0.5s ease;
+}
+.banner-discount-text-container{
+    font-size:30px;
+    font-weight: bold;
+}
+/* teacher list */
+.teacher-list-section{
+    padding:100px;
+}
+.teacher-list-container{
+    
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+   
+    gap:40px;
+    padding:10px 20px 20px 20px;
+
+}
+.scroll-container{
+    overflow-x: auto;
+}
+.teacher-box-container{
+     display:inline-flex;
+     gap:40px;
+}
+.teacher-list-image-container{
+    width: 90%;
+    height: 200px;
+    display:flex;
+    justify-content: center;
+    margin-top:20px;
+    border-radius:10px;
+    
+    
+}
+.teacher-list-image-container img{
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    border-radius:10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,1);
+}
+.teacher-list-box{
+    height: 300px;
+    border: 1px solid #160092;
+    width: 500px;
+    border-radius:10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.teacher-list-title-container{
+    margin-top:10px;
+    line-height: 2;
+    margin-bottom:10px;
+}
+.teacher-list-title{
+    font-size:24px;
+    font-weight: bold;
+}
+/* course list */
+.course-list-section{
+    padding:100px;
+}
+.course-list-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.course-list-box{
+    flex:1 1 calc(29%);
+    margin: 10px;
+    padding: 15px; 
+    background-color: white; 
+    color: #160092;
+    border: 1px solid #160092; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    text-align: center; 
+    transition: background-color 0.3s; 
+    line-height: 2;
+    font-weight: bold;
+    font-size: 24px;
+}
+.course-list-box:hover{
+    color: white;
+    background-color: #160092;
+    transform: scale(1.3);
+    transition:0.5s ease-in-out;
+}
+/* student info section */
+.student-info-section{
+    padding:100px;
+}
+.student-info-container{
+    display: flex;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding:20px;   
+    border-radius:10px;
+}
+
+.student-info-left-side-container .student-info-image-container img{
+    width: 300px;
+    object-fit: cover;
+    height: 300px;
+    border-radius:10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.student-info-left-side-container {
+    justify-content: center;
+    text-align: center;
+}
+.student-info-left-side{
+    margin-top:10px;
+    cursor:pointer;
+}
+.student-info-left-side:hover{
+    color:#CB0000;
+    transform: scale(1.5);
+    transition:0.5s ease;
+    cursor:pointer;
+}
+.student-info-right-side-container{
+    flex:1; 
+}
+.right-side-container ul li{
+    text-decoration: none;
+    
+    font-size:20px; 
+    line-height: 2;
+    font-weight: 800;
+    margin-left:50px;
+}
+
+/* popup change nick name */
+.modaladdnickname {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-container {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* responsive */
+
+@media(max-width:990px){
+    .teacher-list-box,
+    .history-video-box{
+        width:200px;
+        height: 250px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .teacher-list-image-container img,
+    .history-video-box img{
+        width: 150px;
+        height: 150px;
+    }
+    .teacher-list-title{
+        font-size:20px;
+        text-align: center;
+    }
+
+}
+@media(max-width:450px){
+    .history-video-section{
+        padding:20px;
+    }
+    .teacher-list-box, .history-video-box{
+        width: 150px;
+        padding:20px;
+    }
+    .video-text{
+        width: auto;
+    }
+   
+    .teacher-list-image-container img, .history-video-box img{
+        height: 100px;
+        border-radius:10px;
+        box-shadow:0 0 10px rgba(0,0,0,0.4)
+    }
+    .teacher-list-section{
+        padding:20px;
+        justify-content: center;
+    }
+    .teacher-list-title-container{
+        width: 100%;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .scroll-container{
+        white-space: inherit;
+       
+    }
+    h2.section-title{
+        font-size:25px;
+    }
+    .title-container{
+        gap:20px;
+    }
+    .line-decor{
+        width: 50px;
+    }
+    .course-list-section{
+        padding:20px;
+    }
+    .banner-discount-container{
+        padding:20px;
+    }
+    .banner-discount-section{
+        padding:20px;
+        
+    }
+    .banner-discount-button-container{
+        align-self: flex-end;
+    }
+    .banner-discount-text-container{
+        text-align: center;
+        margin-bottom:20px;
+    }
+    .student-info-section{
+        padding:20px;
+    }
+    .student-info-left-side-container .student-info-image-container img{
+        width: 150px;
+        height: 150px;
+    }
+    .right-side-container ul li{
+        margin-left:0;
+        font-size:15px;
+       
+        line-height: 1.5;
+        
+        margin-left:0;
+        
+    }
+    .course-list-box{
+        font-size:18px;
+    }
+    
+    
+}
+@media(max-width:330px){
+    h2.section-title{
+        font-size:20px;
+    }
+    .line-decor{
+        width: 25px;
+    }
+    .video-title,.video-number,
+    .teacher-list-title{
+        font-size:15px;
+    }
+}
